@@ -30,7 +30,9 @@ mod tests {
 
 fn main() {
     // initialize an empty vector numbers
+    let mut numbers = vec![];
     // loop 3 times
+    for _ in 0..2 {}
     // get input and push to vector.
     // if all the same, "All numbers are equal."
     // get the largest
