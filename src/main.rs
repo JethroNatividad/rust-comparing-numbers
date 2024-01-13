@@ -3,6 +3,18 @@
 // Processs: check if equal, get largest number
 // Output: The largest number is {}.
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_get_largest_number() {
+        assert_eq!(get_largest_number(vec![1, 51, 2]), 51);
+        assert_eq!(get_largest_number(vec![9, 1, 32]), 32);
+        assert_eq!(get_largest_number(vec![123, 2231, 32121]), 32121);
+    }
+}
+
 fn main() {
     println!("Hello, world!");
 }
