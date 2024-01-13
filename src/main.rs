@@ -56,5 +56,7 @@ fn main() {
     // get input and push to vector.
     // if all the same, "All numbers are equal."
     // get the largest
+    let max: i64 = get_largest_number(numbers);
     // print "The largest number is {}."
+    println!("The largest number is {}.", max)
 }
