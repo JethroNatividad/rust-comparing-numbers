@@ -49,7 +49,10 @@ fn main() {
     // initialize an empty vector numbers
     let mut numbers = vec![];
     // loop 3 times
-    for _ in 0..2 {}
+    for i in 1..4 {
+        let input: i32 = get_input(format!("Enter number {}: ", i));
+        numbers.push(input);
+    }
     // get input and push to vector.
     // if all the same, "All numbers are equal."
     // get the largest
