@@ -1,3 +1,5 @@
+use std::cmp;
+
 // program that takes in three numbers, if all numbers are the same, end the program, if not, show the largest number
 // Inputs: n1, n2, n3
 // Processs: check if equal, get largest number
@@ -5,9 +7,13 @@
 
 fn get_largest_number(vector: Vec<i64>) -> i64 {
     // initialize largest to Minimum value
+    let mut max: i64 = i64::MIN;
     // loop vector
     // if number > largest, set largest.
-    // return largest
+    for number in &vector {
+        max = cmp::max(number, max);
+    }
+    max
 }
 
 #[cfg(test)]
