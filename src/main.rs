@@ -18,6 +18,10 @@ fn get_largest_number(vector: Vec<i64>) -> i64 {
     max
 }
 
+fn has_equal_elements(vector: Vec<i64>) -> bool {
+    vec.iter().all(|&i| i == vec[0])
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
