@@ -11,7 +11,7 @@ fn get_largest_number(vector: Vec<i64>) -> i64 {
     // loop vector
     // if number > largest, set largest.
     for number in &vector {
-        max = cmp::max(number, max);
+        max = cmp::max(*number, max);
     }
     max
 }
