@@ -1,4 +1,6 @@
 use std::cmp;
+use std::io;
+use std::io::Write;
 
 // program that takes in three numbers, if all numbers are the same, end the program, if not, show the largest number
 // Inputs: n1, n2, n3
@@ -50,7 +52,7 @@ fn main() {
     let mut numbers = vec![];
     // loop 3 times
     for i in 1..4 {
-        let input: i32 = get_input(format!("Enter number {}: ", i));
+        let input: i64 = get_input(&format!("Enter number {}: ", i));
         numbers.push(input);
     }
     // get input and push to vector.
