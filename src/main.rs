@@ -19,7 +19,7 @@ fn get_largest_number(vector: Vec<i64>) -> i64 {
 }
 
 fn has_equal_elements(vector: Vec<i64>) -> bool {
-    vec.iter().all(|&i| i == vec[0])
+    vector.iter().all(|&i| i == vector[0])
 }
 
 #[cfg(test)]
@@ -31,6 +31,13 @@ mod tests {
         assert_eq!(get_largest_number(vec![1, 51, 2]), 51);
         assert_eq!(get_largest_number(vec![9, 1, 32]), 32);
         assert_eq!(get_largest_number(vec![123, 2231, 32121]), 32121);
+    }
+
+    #[test]
+    fn test_has_equal_elements() {
+        assert_eq!(has_equal_elements(vec![1, 51, 2]), false);
+        assert_eq!(has_equal_elements(vec![2, 2, 2]), true);
+        assert_eq!(has_equal_elements(vec![1, 1, 1, 1, 1, 1, 3]), false);
     }
 }
 
