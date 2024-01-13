@@ -3,6 +3,8 @@
 // Processs: check if equal, get largest number
 // Output: The largest number is {}.
 
+fn get_largest_number(vector: Vec<i64>) -> i64 {}
+
 #[cfg(test)]
 mod tests {
     use super::*;
