@@ -29,5 +29,10 @@ mod tests {
 }
 
 fn main() {
-    println!("Hello, world!");
+    // initialize an empty vector numbers
+    // loop 3 times
+    // get input and push to vector.
+    // if all the same, "All numbers are equal."
+    // get the largest
+    // print "The largest number is {}."
 }
